@@ -2,9 +2,9 @@
   margin: 0;
   box-sizing: border-box;
   /* border: 1px solid black; */
-    overflow: hidden;  
-    transition: all 0.35s;
-    font-family: system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  transition: all 0.35s;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 .container {
