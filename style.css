@@ -62,6 +62,12 @@ button.selected {
   button.selected {
     background:linear-gradient(45deg, #7c51fb, #ff476c);
   }
+  .items > button.item {
+    background:linear-gradient(90deg, #7c51fb, #ff476c);
+  }
+  .items > button.item:hover {
+    filter: brightness(1.25);
+  }
 }
 
 .container.green {
@@ -69,12 +75,24 @@ button.selected {
   button.selected {
     background: linear-gradient(60deg, #548112, #16aa79);
   }
+  .items > button.item {
+    background: linear-gradient(90deg, #548112, #16aa79);
+  }
+  .items > button.item:hover {
+    filter: brightness(1.25);
+  }
 }
 
 .container.blue {
   background: linear-gradient(20deg, #3dd8ff, #078bff);
   button.selected {
     background: linear-gradient(20deg, #3dd8ff, #078bff);
+  }  
+  .items > button.item {
+    background: linear-gradient(90deg, #3dd8ff, #078bff);
+  }
+  .items > button.item:hover {
+    filter: brightness(1.25);
   }
 }
 
