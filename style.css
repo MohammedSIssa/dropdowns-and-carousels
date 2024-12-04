@@ -52,6 +52,30 @@ button.selected {
   min-width: 200px;
   font-size: 16px;
   font-weight: bold;
+  
+  border: 2px solid white;
+  color: white;
+}
+
+.container.red {
+  background: linear-gradient(45deg, #7c51fb, #ff476c);
+  button.selected {
+    background:linear-gradient(45deg, #7c51fb, #ff476c);
+  }
+}
+
+.container.green {
+  background: linear-gradient(60deg, #548112, #16aa79);
+  button.selected {
+    background: linear-gradient(60deg, #548112, #16aa79);
+  }
+}
+
+.container.blue {
+  background: linear-gradient(20deg, #3dd8ff, #078bff);
+  button.selected {
+    background: linear-gradient(20deg, #3dd8ff, #078bff);
+  }
 }
 
 button.item:hover {
@@ -60,18 +84,6 @@ button.item:hover {
 
 .hidden {
   display: none;
-}
-
-.red {
-  background: linear-gradient(0deg, #fb3f65, #ff6a88);
-}
-
-.green {
-  background: linear-gradient(0deg, #548112, #6faa16);
-}
-
-.blue {
-  background: linear-gradient(0deg, #5252f4, #8383ff);
 }
 
 .main {
