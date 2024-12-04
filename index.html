@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dropdowns</title>
+  </head>
+  <body>
+    <div class="container red">
+      <div class="dropdowns">
+        <div class="dropdown" dd-id="d-0">
+          <button class="selected" dd-id="d-0">Red</button>
+          <div class="items hidden">
+            <button class="item" dd-id="d-0" type="color" value="red">
+              Red
+            </button>
+            <button class="item" dd-id="d-0" type="color" value="green">
+              Green
+            </button>
+            <button class="item" dd-id="d-0" type="color" value="blue">
+              Blue
+            </button>
+          </div>
+        </div>
+        <div class="dropdown" dd-dd-id="d-1">
+          <button class="selected" dd-id="d-1">Cache</button>
+          <div class="items hidden">
+            <button class="item" dd-id="d-1" type="map" value="./images/Cache-1.webp" images="6" map="Cache">
+              Cache
+            </button>
+            <button class="item" dd-id="d-1" type="map" value="./images/Mirage-1.webp" images="4" map="Mirage">
+              Mirage
+            </button>
+            <button class="item" dd-id="d-1" type="map" value="./images/Dust2-1.webp" images="5" map="Dust2">
+              Dust2
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="image-carousel">
+          <div class="carousel-buttons no-opacity">
+            <button class="back-btn"><</button>
+            <button class="next-btn">></button>
+            <div class="dots">
+              <div class="dot current"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+          <img src="./images/Cache-1.webp" alt="Map Image Here" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

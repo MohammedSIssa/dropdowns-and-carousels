@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+    overflow: hidden;  
+    transition: all 0.35s;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+  /* gap: 10px; */
+}
+
+.dropdowns {
+  display: flex;
+  padding: 10px 50px;
+  gap: 20px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e3e3e3;
+}
+
+.items > button.item {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 0;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button.selected {
+  cursor: pointer;
+  padding: 10px 0;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button.item:hover {
+  background-color: #c7c7c7;
+}
+
+.hidden {
+  display: none;
+}
+
+.red {
+  background: linear-gradient(0deg, #fb3f65, #ff6a88);
+}
+
+.green {
+  background: linear-gradient(0deg, #548112, #6faa16);
+}
+
+.blue {
+  background: linear-gradient(0deg, #5252f4, #8383ff);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 900px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main .image-carousel img {
+  /* min-width: 1000px; */
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.carousel-buttons > button {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px !important;
+  height: 120px;
+  font-weight: bolder;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.548);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button.back-btn {
+  position: absolute;
+  left: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+button.next-btn {
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.carousel-buttons {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
+.dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.dots > .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #747474;
+  border-radius: 50%;
+}
+
+.dots > .dot.current {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1000px) {
+  .no-opacity {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    height: 70%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dropdowns {
+    flex-direction: column;
+  }
+  .no-opacity {
+    display: block;
+  }
+}
